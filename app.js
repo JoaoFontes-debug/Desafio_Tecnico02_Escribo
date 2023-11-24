@@ -58,7 +58,7 @@ function verifyToken(req, res, next) {
   }
 }
 
-app.post("/signup", async (req, res) => {
+app.post("/singup", async (req, res) => {
   const { nome, email, senha, telefones } = req.body;
   const userExist = await User.findOne({ email });
 
@@ -99,7 +99,7 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-app.post("/sigin", async (req, res) => {
+app.post("/singin", async (req, res) => {
   const { email, senha } = req.body;
   const user = await User.findOne({ email: email });
 
