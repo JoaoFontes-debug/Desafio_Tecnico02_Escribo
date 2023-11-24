@@ -150,7 +150,7 @@ mongoose
     "mongodb+srv://jhenrykings:VvoIHwa4DOOfF4xg@cluster0.cywukdm.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
-    app.listen(3000);
+    app.listen(8080);
     console.log("Conexão com o banco estabelecida!");
   })
   .catch((err) => console.log(err));
